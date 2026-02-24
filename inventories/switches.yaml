@@ -1,0 +1,8 @@
+switches:
+  - hostname: switch01
+    ip: 192.168.10.1
+    role: access
+  - hostname: switch02
+    ip: 192.168.10.2
+    role: distribution
+    

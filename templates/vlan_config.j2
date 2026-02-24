@@ -1,0 +1,18 @@
+! VLAN Configuration
+vlan {{ vlan_id }}
+ name {{ vlan_name }}
+
+! Default deny ACL (Zero Trust baseline)
+ip access-list extended DENY_ALL
+ deny ip any any
+
+! Example: allow traffic only for whitelisted VLANs
+ip access-list extended ALLOW_VLAN_{{ vlan_id }}
+ permit ip any any vlan {{ vlan_id }}
+
+! Port Security Configuration
+interface GigabitEthernet0/1
+ switchport mode access
+ switchport port-security
+ switchport port-security maximum 2
+ switchport port-security violation restrict

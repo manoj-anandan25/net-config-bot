@@ -1,0 +1,29 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+
+# Virtual environments
+venv/
+.env
+
+# Logs
+*.log
+incident.log
+
+# Config files with secrets
+config.yaml
+config/jira.yaml
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# IDE/editor files
+.vscode/
+.idea/
+
+# Build/test artifacts
+coverage/
+*.coverage
+*.pytest_cache/

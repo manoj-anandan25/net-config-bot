@@ -1,0 +1,7 @@
+--- switch01_backup.cfg
++++ switch01.cfg
+@@
+-vlan 5
+- name GuestLAN
++vlan 10
++ name OfficeLAN

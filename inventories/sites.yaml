@@ -1,0 +1,5 @@
+sites:
+  - name: Bangalore Office
+    devices: [switch01, switch02]
+  - name: Chennai Branch
+    devices: []

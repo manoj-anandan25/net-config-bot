@@ -1,0 +1,5 @@
+zero_trust:
+  - rule: "deny all by default"
+  - rule: "allow only whitelisted VLANs"
+  - rule: "enable port security"
+  - rule: "apply ACLs for restricted access"
