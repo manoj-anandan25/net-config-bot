@@ -110,5 +110,3 @@ python main.py --apply
 ---
 
 <p align="center"> Developed by <b>Manoj Anandan</b> </p>
-
-```
